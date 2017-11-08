@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<rooT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="rooT.xsd">
+	<libyami>
+		<yamiencode>
+			<input tag="-i">/root/media_streams/encoderbitstreams/CITY_704x576_30_orig_01.yuv</input>
+			<output tag="-o">CITY_704x576_30_orig_01.yuv_20_1.h264</output>
+			<width tag="-W">704</width>
+			<height tag="-H">576</height>
+			<qp tag="--qp">20</qp>
+			<codec tag="-c">VP9</codec>
+			<fourcc tag="-s">NV12</fourcc>
+			<bitrate tag="-b">10</bitrate>
+		</yamiencode>
+	</libyami>
+</rooT>

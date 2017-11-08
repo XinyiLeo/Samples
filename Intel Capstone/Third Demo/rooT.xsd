@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<!-- Define all options here -->
+	<xs:element name="input" type = "opt_input" />
+	<xs:element name="width" type = "opt_width" />
+	<xs:element name="height" type = "opt_height" />
+	<xs:element name="output" type = "opt_output" />
+	<xs:element name="bitrate" type = "opt_bitrate" />
+	<xs:element name="framerate" type = "opt_framerate" />
+	<xs:element name="codec" type = "opt_codec" />
+	<xs:element name="fourcc" type = "opt_fourcc" />
+	<xs:element name="frameEncCnt" type = "opt_frameEncCnt" />
+	<xs:element name="qp" type = "opt_qp" />
+	<xs:element name="rcmode" type = "opt_rcmode" />
+	<xs:element name="ipperiod" type = "opt_ipperiod" />
+	<xs:element name="intraperiod" type = "opt_intraperiod" />
+	<xs:element name="refnum" type = "opt_refnum" />
+	<xs:element name="idrinterval" type = "opt_idrinterval" />
+	<xs:element name="refmode" type = "opt_refmode" />
+	<xs:element name="lowpower" type = "opt_lowpower" />
+	<xs:element name="target-percentage" type = "opt_target-percentage" />	
+	<xs:element name="hrd-window-size" type = "opt_hrd-window-size" />
+	<xs:element name="vbv-buffer-fullness" type = "opt_vbv-buffer-fullness" />	
+	<xs:element name="vbv-buffer-size" type = "opt_vbv-buffer-size" />
+	<xs:element name="quality-level" type = "opt_quality-level" />	
+	<!-- Options ends here, you can't delete this comment!!! -->
+
+	<!-- Define root element "rooT" and its content -->
+	<xs:element name="rooT">
+        	<xs:complexType>
+                     	<xs:sequence>
+                            	<xs:element ref="libyami" minOccurs="0"/>
+                        </xs:sequence>
+             	</xs:complexType>
+      	</xs:element>
+
+	<!-- Define element "encoder" and its content -->
+	<xs:element name="libyami">
+        	<xs:complexType>
+                     	<xs:sequence>
+                            	<xs:element ref="yamiencode" minOccurs="0"/>
+                        </xs:sequence>
+            	</xs:complexType>
+      	</xs:element>
+
+	<!-- Define element "command" and its content -->
+	<xs:element name="yamiencode">
+        	<xs:complexType>
+           		<xs:all>
+                            	<xs:element ref="input"/>
+				<xs:element ref="width"/>
+				<xs:element ref="height"/>
+                            	<xs:element ref="output" minOccurs="0"/>
+				<xs:element ref="bitrate" minOccurs="0"/>
+				<xs:element ref="framerate" minOccurs="0"/>
+				<xs:element ref="codec"/>
+                            	<xs:element ref="fourcc"/>
+				<xs:element ref="frameEncCnt" minOccurs="0"/>
+				<xs:element ref="qp" minOccurs="0"/>
+				<xs:element ref="rcmode" minOccurs="0"/>
+				<xs:element ref="ipperiod" minOccurs="0"/>
+				<xs:element ref="intraperiod" minOccurs="0"/>
+				<xs:element ref="refnum" minOccurs="0"/>
+				<xs:element ref="refmode" minOccurs="0"/>
+				<xs:element ref="lowpower" minOccurs="0"/>
+				<xs:element ref="target-percentage" minOccurs="0"/>
+				<xs:element ref="hrd-window-size" minOccurs="0"/>
+				<xs:element ref="vbv-buffer-fullness" minOccurs="0"/>
+				<xs:element ref="vbv-buffer-size" minOccurs="0"/>
+				<xs:element ref="quality-level" minOccurs="0"/>
+                        </xs:all>
+            	</xs:complexType>
+      	</xs:element>
+
+
+	<!-- Define the complexType for options here -->
+        <xs:complexType name = "opt_input">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:string">
+        			<xs:attribute name="tag" type="xs:string" fixed = "-i"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+        <xs:complexType name = "opt_width">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:integer">
+        			<xs:attribute name="tag" type="xs:string" fixed = "-W"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+	
+	<xs:complexType name = "opt_height">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:integer">
+        			<xs:attribute name="tag" type="xs:string" fixed = "-H"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_output">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:string">
+        			<xs:attribute name="tag" type="xs:string" fixed = "-o"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_bitrate">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "-b"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_framerate">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "-f"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name="opt_codec">
+   		<xs:simpleContent>
+      			<xs:extension base="codecType">
+         			<xs:attribute name="tag" type="xs:string" fixed = "-c"/>
+      			</xs:extension>
+   		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="opt_fourcc">
+   		<xs:simpleContent>
+      			<xs:extension base="fourccType">
+         			<xs:attribute name="tag" type="xs:string" fixed = "-s"/>
+      			</xs:extension>
+   		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name = "opt_frameEncCnt">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "-N"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_qp">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--qp"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_rcmode">
+          	<xs:simpleContent>
+    			<xs:extension base="rcmodeType">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--rcmode"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_ipperiod">
+          	<xs:simpleContent>
+    			<xs:extension base="ipperiodType">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--ipperiod"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_intraperiod">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--intraperiod"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_refnum">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--refnum"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_idrinterval">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--idrinterval"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_refmode">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:boolean">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--refmode"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_lowpower">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:boolean">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--lowpower"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_target-percentage">
+          	<xs:simpleContent>
+    			<xs:extension base="target-percentageType">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--target-percentage"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_hrd-window-size">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedShort">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--hrd-window-size"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_vbv-buffer-fullness">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--vbv-buffer-fullness"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_vbv-buffer-size">
+          	<xs:simpleContent>
+    			<xs:extension base="xs:unsignedByte">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--vbv-buffer-size"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+	<xs:complexType name = "opt_quality-level">
+          	<xs:simpleContent>
+    			<xs:extension base="quality-levelType">
+        			<xs:attribute name="tag" type="xs:string" fixed = "--quality-level"/>
+      			</xs:extension>
+    		</xs:simpleContent>
+        </xs:complexType>
+
+
+
+
+	<!-- Define some simpleTypes(restrictions) here -->
+	<xs:simpleType name="codecType">
+  		<xs:restriction base="xs:string">
+    			<xs:enumeration value="HEVC"/>
+    			<xs:enumeration value="AVC"/>
+    			<xs:enumeration value="VP8"/>
+			<xs:enumeration value="VP9"/>
+			<xs:enumeration value="JPEG"/>
+  		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="fourccType">
+  		<xs:restriction base="xs:string">
+    			<xs:enumeration value="NV12"/>
+    			<xs:enumeration value="I420"/>
+    			<xs:enumeration value="IYUV"/>
+			<xs:enumeration value="YU12"/>
+			<xs:enumeration value="P010"/>
+  		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="rcmodeType">
+  		<xs:restriction base="xs:string">
+    			<xs:enumeration value="CBR"/>
+    			<xs:enumeration value="VBR"/>
+    			<xs:enumeration value="CQP"/>
+  		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="ipperiodType">
+  		<xs:restriction base="xs:string">
+    			<xs:enumeration value="0"/>
+    			<xs:enumeration value="1"/>
+    			<xs:enumeration value="N"/>
+  		</xs:restriction>
+	</xs:simpleType>
+ 
+	<xs:simpleType name = "target-percentageType">
+  		<xs:restriction base="xs:integer">
+    			<xs:minInclusive value="50"/>
+    			<xs:maxInclusive value="100"/>
+  		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name = "quality-levelType">
+  		<xs:restriction base="xs:integer">
+    			<xs:minInclusive value="0"/>
+    			<xs:maxInclusive value="7"/>
+  		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+
+
+
