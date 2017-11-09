@@ -1,0 +1,3 @@
+verilog work "IF_STAGE.v"
+verilog work "IF_Test.tfw"
+verilog work "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

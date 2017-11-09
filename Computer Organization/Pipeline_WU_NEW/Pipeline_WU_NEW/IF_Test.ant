@@ -1,0 +1,158 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : ISE
+//  /   /         Filename : IF_Test.ant
+// /___/   /\     Timestamp : Wed Nov 25 20:08:02 2015
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: IF_Test
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module IF_Test;
+    reg reset = 1'b1;
+    reg clock = 1'b0;
+    reg [31:0] Addr_after_funct = 32'b00000000000000000000000000000000;
+    reg PCSrc = 1'b0;
+    wire [31:0] Instruction_IF;
+    wire [31:0] PC_Address_next;
+
+
+    IF_STAGE UUT (
+        .reset(reset),
+        .clock(clock),
+        .Addr_after_funct(Addr_after_funct),
+        .PCSrc(PCSrc),
+        .Instruction_IF(Instruction_IF),
+        .PC_Address_next(PC_Address_next));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process
+        #0;
+        ANNOTATE_Instruction_IF;
+        ANNOTATE_PC_Address_next;
+        forever begin
+            #1;
+            ANNOTATE_Instruction_IF;
+            ANNOTATE_PC_Address_next;
+            #50;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("C:\\Users\\wuxy3\\Desktop\\Pipeline_WU_NEW\\IF_Test.ano");
+        #1000 // Final time:  1000 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  51ns
+        #51;
+        reset = 1'b0;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  102ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  153ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  204ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  255ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  306ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  357ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  408ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  459ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  510ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  561ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  612ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  663ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  714ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  765ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  816ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  867ns
+        #51;
+        clock = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  918ns
+        #51;
+        clock = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  969ns
+        #51;
+        clock = 1'b1;
+    end
+
+    task ANNOTATE_Instruction_IF;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,Instruction_IF,%b]", $time, Instruction_IF);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_PC_Address_next;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,PC_Address_next,%b]", $time, PC_Address_next);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+
