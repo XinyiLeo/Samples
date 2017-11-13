@@ -1,0 +1,1 @@
+  Basic input and output in c++, and basic calculation, nothing special.

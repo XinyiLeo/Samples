@@ -1,0 +1,213 @@
+Release 10.1 Map K.31 (nt)
+Xilinx Mapping Report File for Design 'lab6'
+
+Design Information
+------------------
+Command Line   : map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle
+ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd
+lab6.pcf 
+Target Device  : xc3s1200e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.46 $
+Mapped Date    : Fri Nov 27 11:38:44 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:           284 out of  17,344    1%
+  Number of 4 input LUTs:               908 out of  17,344    5%
+Logic Distribution:
+  Number of occupied Slices:            546 out of   8,672    6%
+    Number of Slices containing only related logic:     546 out of     546 100%
+    Number of Slices containing unrelated logic:          0 out of     546   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         966 out of  17,344    5%
+    Number used as logic:               716
+    Number used as a route-thru:         58
+    Number used for Dual Port RAMs:      64
+      (Two LUTs used per Dual Port RAM)
+    Number used for 32x1 RAMs:          128
+      (Two LUTs used per 32x1 RAM)
+  Number of bonded IOBs:                 20 out of     250    8%
+  Number of RAMB16s:                      2 out of      28    7%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Peak Memory Usage:  232 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:243 - Logical network R4/M2/Mram_Reg_Memory32/SPO has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 31
+   more times for the following (max. 5 shown):
+   R4/M2/Mram_Reg_Memory31/SPO,
+   R4/M2/Mram_Reg_Memory30/SPO,
+   R4/M2/Mram_Reg_Memory29/SPO,
+   R4/M2/Mram_Reg_Memory28/SPO,
+   R4/M2/Mram_Reg_Memory26/SPO
+   To see the details of these warning messages, please use the -detail switch.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |             | Strength | Rate |              |          | Delay    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+| SSDv<0>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| SSDv<1>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| SSDv<2>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| SSDv<3>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| SSDv<4>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| SSDv<5>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| SSDv<6>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| Switch                             | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| clock                              | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| re                                 | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| ringresult<0>                      | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| ringresult<1>                      | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| ringresult<2>                      | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| ringresult<3>                      | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| select<0>                          | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| select<1>                          | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| select<2>                          | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| select<3>                          | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| select<4>                          | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| stop                               | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| lab6/              |           | 122/741       | 0/284         | 135/966       | 0/192         | 0/2       | 0/0       | 1/2   | 0/0   | lab6               |
+| +R1                |           | 31/31         | 19/19         | 25/25         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R1            |
+| +R2                |           | 13/13         | 12/12         | 13/13         | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | lab6/R2            |
+| +R3                |           | 2/2           | 4/4           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R3            |
+| +R4                |           | 17/573        | 0/249         | 25/789        | 0/192         | 0/2       | 0/0       | 0/0   | 0/0   | lab6/R4            |
+| ++M1               |           | 14/14         | 8/8           | 13/13         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M1         |
+| ++M10              |           | 33/33         | 0/0           | 52/52         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M10        |
+| ++M11              |           | 6/6           | 0/0           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M11        |
+| ++M2               |           | 43/43         | 10/10         | 82/82         | 64/64         | 2/2       | 0/0       | 0/0   | 0/0   | lab6/R4/M2         |
+| ++M3               |           | 187/187       | 0/0           | 354/354       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M3         |
+| ++M4               |           | 82/82         | 0/0           | 163/163       | 128/128       | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M4         |
+| ++M5               |           | 20/20         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M5         |
+| ++M6               |           | 29/29         | 30/30         | 52/52         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M6         |
+| ++M7               |           | 23/23         | 36/36         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M7         |
+| ++M8               |           | 80/80         | 92/92         | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M8         |
+| ++M9               |           | 39/39         | 73/73         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab6/R4/M9         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

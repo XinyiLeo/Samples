@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/wuxy3/SIngle Cycle Final/lab6.ise -intstyle ise -e 3 -s 4 -xml lab6
+lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+
+Design file:              lab6.ncd
+Physical constraint file: lab6.pcf
+Device,package,speed:     xc3s1200e,fg320,-4 (PRODUCTION 1.27 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    8.787|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Switch         |SSDv<0>        |   15.255|
+Switch         |SSDv<1>        |   15.390|
+Switch         |SSDv<2>        |   16.409|
+Switch         |SSDv<3>        |   17.592|
+Switch         |SSDv<4>        |   16.782|
+Switch         |SSDv<5>        |   16.718|
+Switch         |SSDv<6>        |   14.939|
+select<0>      |SSDv<0>        |   16.780|
+select<0>      |SSDv<1>        |   16.706|
+select<0>      |SSDv<2>        |   18.409|
+select<0>      |SSDv<3>        |   18.376|
+select<0>      |SSDv<4>        |   17.920|
+select<0>      |SSDv<5>        |   18.118|
+select<0>      |SSDv<6>        |   16.426|
+select<1>      |SSDv<0>        |   16.490|
+select<1>      |SSDv<1>        |   16.418|
+select<1>      |SSDv<2>        |   18.144|
+select<1>      |SSDv<3>        |   18.113|
+select<1>      |SSDv<4>        |   17.525|
+select<1>      |SSDv<5>        |   17.489|
+select<1>      |SSDv<6>        |   16.161|
+select<2>      |SSDv<0>        |   15.371|
+select<2>      |SSDv<1>        |   15.350|
+select<2>      |SSDv<2>        |   16.739|
+select<2>      |SSDv<3>        |   17.559|
+select<2>      |SSDv<4>        |   16.803|
+select<2>      |SSDv<5>        |   16.723|
+select<2>      |SSDv<6>        |   14.954|
+select<3>      |SSDv<0>        |   16.288|
+select<3>      |SSDv<1>        |   16.216|
+select<3>      |SSDv<2>        |   17.942|
+select<3>      |SSDv<3>        |   17.829|
+select<3>      |SSDv<4>        |   17.323|
+select<3>      |SSDv<5>        |   17.287|
+select<3>      |SSDv<6>        |   15.959|
+select<4>      |SSDv<0>        |   14.979|
+select<4>      |SSDv<1>        |   15.277|
+select<4>      |SSDv<2>        |   15.987|
+select<4>      |SSDv<3>        |   16.949|
+select<4>      |SSDv<4>        |   16.701|
+select<4>      |SSDv<5>        |   16.665|
+select<4>      |SSDv<6>        |   14.296|
+stop           |SSDv<0>        |   12.550|
+stop           |SSDv<1>        |   12.883|
+stop           |SSDv<2>        |   13.826|
+stop           |SSDv<3>        |   14.810|
+stop           |SSDv<4>        |   15.278|
+stop           |SSDv<5>        |   14.766|
+stop           |SSDv<6>        |   12.550|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Nov 27 11:39:12 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 150 MB
+
+
+

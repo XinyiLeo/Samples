@@ -1,0 +1,76 @@
+Determining compilation order of HDL files
+Analyzing Verilog file WB_STAGE.v
+Analyzing Verilog file MEM_WB.v
+Analyzing Verilog file MEM_STAGE.v
+Analyzing Verilog file IF_STAGE.v
+Analyzing Verilog file IF_ID.v
+Analyzing Verilog file ID_STAGE.v
+Analyzing Verilog file ID_EX.v
+Analyzing Verilog file ForwardUnit.v
+Analyzing Verilog file EX_STAGE.v
+Analyzing Verilog file EX_MEM.v
+Analyzing Verilog file DetectUnit.v
+Analyzing Verilog file BeqCtrl.v
+Analyzing Verilog file Main.v
+Analyzing Verilog file FUCK_YOU_MOTHER_Xilinx.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.WB_STAGE into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@w@b_@s@t@a@g@e.sdb
+Saving Verilog parse-tree work.MEM_WB into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@m@e@m_@w@b.sdb
+Saving Verilog parse-tree work.MEM_STAGE into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@m@e@m_@s@t@a@g@e.sdb
+Saving Verilog parse-tree work.IF_STAGE into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@i@f_@s@t@a@g@e.sdb
+Saving Verilog parse-tree work.IF_ID into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@i@f_@i@d.sdb
+Saving Verilog parse-tree work.ID_STAGE into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@i@d_@s@t@a@g@e.sdb
+Saving Verilog parse-tree work.ID_EX into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@i@d_@e@x.sdb
+Saving Verilog parse-tree work.ForwardUnit into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@forward@unit.sdb
+Saving Verilog parse-tree work.EX_STAGE into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@e@x_@s@t@a@g@e.sdb
+Saving Verilog parse-tree work.EX_MEM into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@e@x_@m@e@m.sdb
+Saving Verilog parse-tree work.DetectUnit into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@detect@unit.sdb
+Saving Verilog parse-tree work.BeqCtrl into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@beq@ctrl.sdb
+Saving Verilog parse-tree work.Main into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@main.sdb
+Saving Verilog parse-tree work.FUCK_YOU_MOTHER_Xilinx into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/@f@u@c@k_@y@o@u_@m@o@t@h@e@r_@x
+ilinx.sdb
+Saving Verilog parse-tree work.glbl into
+c:/users/wuxy3/desktop/pipeline_wu_new/isim/work/glbl.sdb
+Starting static elaboration
+WARNING:HDLCompiler:189 - "Main.v" Line 107. Actual bit length 32 differs from
+   formal bit length 5 for port rtd_out_ID
+WARNING:HDLCompiler:189 - "Main.v" Line 117. Actual bit length 32 differs from
+   formal bit length 5 for port rtd_WB
+WARNING:HDLCompiler:189 - "Main.v" Line 125. Actual bit length 32 differs from
+   formal bit length 5 for port MEM_WB_Rd
+Completed static elaboration
+Fuse Memory Usage: 143788 Kb
+Fuse CPU Usage: 171 ms
+Compiling module glbl
+Compiling module IF_STAGE
+Compiling module ID_STAGE
+Compiling module EX_STAGE
+Compiling module MEM_STAGE
+Compiling module WB_STAGE
+Compiling module IF_ID
+Compiling module ID_EX
+Compiling module EX_MEM
+Compiling module MEM_WB
+Compiling module ForwardUnit
+Compiling module DetectUnit
+Compiling module BeqCtrl
+Compiling module Main
+Compiling module FUCK_YOU_MOTHER_Xilinx
+Compiled 15 Verilog Units
+Built simulation executable FUCK_YOU_MOTHER_Xilinx_isim_beh.exe
+Fuse Memory Usage: 146004 Kb
+Fuse CPU Usage: 280 ms

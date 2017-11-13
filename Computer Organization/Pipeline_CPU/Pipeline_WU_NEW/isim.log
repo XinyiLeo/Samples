@@ -1,0 +1,43 @@
+Command line:
+   ./FUCK_YOU_MOTHER_Xilinx_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  56104
+WARNING:Simulator:678 -  For instance uut/M2/, width 5 of formal port rtd_out_ID
+   is not equal to width 32 of actual signal rtd_WB.
+WARNING:Simulator:678 -  For instance uut/M9/, width 5 of formal port rtd_WB is
+   not equal to width 32 of actual signal rtd_WB.
+WARNING:Simulator:678 -  For instance uut/M10/, width 5 of formal port MEM_WB_Rd
+   is not equal to width 32 of actual signal rtd_WB.
+
+Fri Nov 27 08:25:37 2015
+
+Total Line Count : 402
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 181.383 Meg
+
+ Total Signals          : 286
+ Total Nets             : 1032
+ Total Signal Drivers   : 90
+ Total Blocks           : 15
+ Total Primitive Blocks : 13
+ Total Processes        : 111
+ Total Traceable Variables  : 90
+ Total Scalar Nets and Variables : 7103
+ntrace select -o on -n /FUCK_YOU_MOTHER_Xilinx/final_address 
+ntrace select -o on -n /FUCK_YOU_MOTHER_Xilinx/half_period 
+ntrace select -o on -n /FUCK_YOU_MOTHER_Xilinx/reset 
+ntrace select -o on -n /FUCK_YOU_MOTHER_Xilinx/clock 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 184.758 Meg
+
+Fri Nov 27 08:51:02 2015
+

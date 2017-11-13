@@ -1,0 +1,388 @@
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/lab6/lab6.xst" -ofn "C:/Users/wuxy3/lab6/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/lab6/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/lab6/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+xst -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -ifn "C:/Users/wuxy3/SIngle Cycle Final/lab6.xst" -ofn "C:/Users/wuxy3/SIngle Cycle Final/lab6.syr"
+ngdbuild -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "lab6.ngc" lab6.ngd
+map -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o lab6_map.ncd lab6.ngd lab6.pcf
+par -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -w -intstyle ise -ol std -t 1 lab6_map.ncd lab6.ncd lab6.pcf
+trce -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -e 3 -s 4 -xml lab6 lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+bitgen -ise "C:/Users/wuxy3/SIngle Cycle Final/lab6.ise" -intstyle ise -f lab6.ut lab6.ncd
