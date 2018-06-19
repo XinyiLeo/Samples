@@ -1,0 +1,2 @@
+Simply type "make" to run the program. M should divide 100. 
+the arguments are ./oscillator alpha sigma step(N) trail(N)
