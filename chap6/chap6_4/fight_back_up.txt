@@ -1,0 +1,142 @@
+bool fighting() {
+	int minute = curtime % 60;
+	int hour = (curtime - minute) / 60;
+	int result[N+2]; // 2: BLUE ARROW KILLED 1: RED WIN 0: N/A -1: BLUE WIN -2: RED ARROW KILLED 3/-3: PREPARE FOR COUNTER ATTACK 
+	result[0] = result[N+1] = 0;
+
+	// Attack
+	headquarterType attacker;
+
+	for(int i = 1; i < N+1; i++) {
+		if(((cityMap[i]->flag == UNFLAGGED && i % 2 == 1) || cityMap[i]->flag == RED) && cityMap[i]->pSet[RED]) {
+			attacker = RED;
+			result[i] = cityMap[i]->pSet[RED]->attack(cityMap[i]->pSet[BLUE], i);
+		}
+		else if(cityMap[i]->pSet[BLUE]) {
+			attacker = BLUE;
+			result[i] = -cityMap[i]->pSet[BLUE]->attack(cityMap[i]->pSet[RED], i);				
+		}		
+		else result[i] = 0;
+	}	
+
+	// Counter Attack: for those +3/-3
+	for(int i = 1; i < N+1; i++) {
+		if(result[i] == 3 && cityMap[i]->pSet[BLUE]->waType != NINJA) // blue counter
+			result[i] = -cityMap[i]->pSet[BLUE]->counterAttack(cityMap[i]->pSet[RED], i);
+		else if(result[i] == -3 && cityMap[i]->pSet[RED]->waType != NINJA)
+			result[i] = cityMap[i]->pSet[RED]->counterAttack(cityMap[i]->pSet[BLUE], i);			
+		else result[i] = 0;
+	}	
+	
+
+	// Warrior Killed
+	headquarterType killed;
+	headquarterType victor;
+	for(int i = 1; i < N+1; i++) {
+		if(result[i] == 1) {
+			victor = RED;
+			killed = BLUE;
+		}
+		if(result[i] == -1) {
+			victor = BLUE;
+			killed = RED;
+		}
+		if(result[i] == 1 || result[i] == -1) {
+			cout << setfill('0') << setw(3) << hour << ":" << setfill('0') << setw(2) << minute << " " ;
+			cout << hName[cityMap[i]->pSet[killed]->HQ->hType] << " " << waName[cityMap[i]->pSet[killed]->waType] << " " << cityMap[i]->pSet[killed]->id;
+			cout << " was killed in city " << i << endl;	
+			if(cityMap[i]->pSet[killed]->waType == LION)
+				cityMap[i]->pSet[victor]->life += cityMap[i]->pSet[killed]->showLife();
+			// dragon morale
+			if(cityMap[i]->pSet[victor]->waType == DRAGON) {
+				cityMap[i]->pSet[victor]->increaseMorale();
+			}
+			// wolf get weapon
+			if(cityMap[i]->pSet[victor]->waType == WOLF) {
+				getWeapon(cityMap[i]->pSet[victor], cityMap[i]->pSet[killed]);
+			}
+			cityMap[i]->pSet[killed] = NULL;
+		}
+		if(result[i] == 3 || result[i] == -3) {
+			if( cityMap[i]->pSet[RED]->waType == DRAGON ) 
+				cityMap[i]->pSet[RED]->decreaseMorale();
+			if( cityMap[i]->pSet[BLUE]->waType == DRAGON ) 
+				cityMap[i]->pSet[BLUE]->decreaseMorale();
+			if( cityMap[i]->pSet[RED]->waType == LION ) 
+				cityMap[i]->pSet[RED]->decreaseLoyalty();
+			if( cityMap[i]->pSet[BLUE]->waType == LION ) 
+				cityMap[i]->pSet[BLUE]->decreaseLoyalty();
+		}
+	}	
+
+	// cout << "pre yelled" << endl;
+	// Dragon yelled
+	for(int i = 1; i < N+1; i++) {
+		if( result[i] && cityMap[i]->pSet[attacker] && cityMap[i]->pSet[attacker]->waType == DRAGON )
+			cityMap[i]->pSet[attacker]->yell(i, cityMap[i]->pSet[attacker]->HQ->hType);
+	}	
+	
+	// cout << "pre get life" << endl;
+	// Warrior get life from headquarters
+	for(int i = 1; i < N+1; i++) {
+		if( result[i] == 1 ) {
+			// reward life
+			if( cityMap[i]->pSet[RED]->HQ->life > 8 ) {
+				cityMap[i]->pSet[RED]->HQ->life -= 8;
+				cityMap[i]->pSet[RED]->life += 8;
+			}
+			cout << setfill('0') << setw(3) << hour << ":" << setfill('0') << setw(2) << minute << " " ;
+			cout << hName[cityMap[i]->pSet[RED]->HQ->hType] << " " << waName[cityMap[i]->pSet[RED]->waType] << " " << cityMap[i]->pSet[RED]->id;
+			cout << " earned " << cityMap[i]->life << " elements for his headquarter" << endl;	
+			cityMap[i]->pSet[RED]->HQ->life += cityMap[i]->life;
+			cityMap[i]->life = 0;
+		}
+	}	
+	for(int i = N; i > 0; i--) {
+		if( result[i] == -1 ) {
+			if( cityMap[i]->pSet[BLUE]->HQ->life > 8 ) {
+				cityMap[i]->pSet[BLUE]->HQ->life -= 8;
+				cityMap[i]->pSet[BLUE]->life += 8;
+			}
+			cout << setfill('0') << setw(3) << hour << ":" << setfill('0') << setw(2) << minute << " " ;
+			cout << hName[cityMap[i]->pSet[BLUE]->HQ->hType] << " " << waName[cityMap[i]->pSet[BLUE]->waType] << " " << cityMap[i]->pSet[BLUE]->id;
+			cout << " earned " << cityMap[i]->life << " elements for his headquarter" << endl;	
+			cityMap[i]->pSet[BLUE]->HQ->life += cityMap[i]->life;
+			cityMap[i]->life = 0;
+		}
+	}	
+
+	// cout << "pre set flag" << endl;
+	// Setting flag
+	for(int i = 1; i < N+1; i++) {
+		if( result[i] == 1 ) {
+			// red win
+			if( cityMap[i]->flag != RED ) {
+				if( cityMap[i]->consecutiveDirection == RED ) {
+					cityMap[i]->flag = RED;
+					cityMap[i]->consecutiveDirection == UNFLAGGED;
+					cout << setfill('0') << setw(3) << hour << ":" << setfill('0') << setw(2) << minute << " " ;
+					cout << "red flag raised in city " << i << endl;
+				}
+				else
+					cityMap[i]->consecutiveDirection == RED;
+			}
+		}
+		if( result[i] == -1 ) {
+			// blue win
+			if( cityMap[i]->flag != BLUE ) {
+				if( cityMap[i]->consecutiveDirection == BLUE ) {
+					cityMap[i]->flag = BLUE;
+					cityMap[i]->consecutiveDirection == UNFLAGGED;
+					cout << setfill('0') << setw(3) << hour << ":" << setfill('0') << setw(2) << minute << " " ;
+					cout << "blue flag raised in city " << i << endl;
+				}
+				else
+					cityMap[i]->consecutiveDirection == BLUE;
+			}
+		}
+
+	}	
+	return true;
+}
+
